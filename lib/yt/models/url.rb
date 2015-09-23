@@ -69,6 +69,7 @@ module Yt
         video_id = '(?<id>[a-zA-Z0-9_-]+)'
 
         %W{
+          youtube\\.com/watch\\?t=[0-9]+&v=#{video_id}
           youtube\\.com/watch\\?v=#{video_id}
           youtu\\.be/#{video_id}
           youtube\\.com/embed/#{video_id}
