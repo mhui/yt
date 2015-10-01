@@ -37,7 +37,7 @@ module Yt
       end
 
       def patterns_for(*kinds)
-        prefix = '^(?:https?://)?(?:www|m\.)?'
+        prefix = '^(?:https?://)?(?:(?:www|m)\.)?'
         suffix = '(?:|/)'
         kinds.map do |kind|
           patterns = send "#{kind}_patterns" # meta programming :/
